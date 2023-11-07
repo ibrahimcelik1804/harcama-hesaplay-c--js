@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="heading">Harcama Hasaplayıcı</h1>
+    <div class="container">
+      <div class="greet">
+        <h3 class="">Hoşgeldiniz</h3>
+        <input type="text" placeholder="İsminizi Giriniz..." required id="name-input" />
+      </div>
+
+      <form>
+        <div class="double">
+          <div class="form-harcama">
+            <label for="">Harcama :</label>
+            <input type="text" placeholder="Ürün Giriniz" id="harcama"/>
+          </div>
+          <div class="form-fiyat">
+            <label for="">Fiat :</label>
+            <input type="number" placeholder="Fiyatını Giriniz" id="fiyat" />
+          </div>
+        </div>
+        <div class="double">
+          <div class="form-state">
+            <input type="checkbox" id="status-input" />
+            <label for="">Ödendi</label>
+          </div>
+
+          <button class="ekle-btn">Ekle</button>
+        </div>
+      </form>
+
+      <div class="total">
+        Toplam Harcama : <span id="total-info">0 </span> ₺
+      </div>
+      <select name="" id="filter-select">
+        <option value="all">Hepsi</option>
+        <option value="not-payed">Ödenmedi</option>
+        <option value="payed">Ödendi</option>
+      </select>
+
+      <div class="list"></div>
+      
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
